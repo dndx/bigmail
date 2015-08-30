@@ -10,8 +10,12 @@ To use, edit main/main.go and specify the following information:
 
 If you have multiple email to send, send all of them into the channel before closing it.
 
+After that, run it by `cd` into `$GOPATH/src/github.com/dndx/bigmail/main` and execute `go run main.go`.
+
+bigmail contains a sender library and could be integrated into existing project easily.
+
 # Benchmark
-Using a 10 worker setup, bigmail can send 20 emails/second over an Internet environemnt. Thus it is very efficient on sending large volume of emails.
+Using a 10 worker setup, bigmail can send 20 emails/second over an Internet environemnt to `sendmail` daemons. Thus it is very efficient on sending large volume of emails.
 
 # To Do
 * Nicer CLI interface
