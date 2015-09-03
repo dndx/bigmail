@@ -18,8 +18,7 @@ package bigmail
 // A Message represents an email message that needs to be sent
 // Bigmail will automatically add appropriate envelope headers to make the message valid before sending
 type Message struct {
-	From    string
-	To      []string
-	Subject string
-	Body    string
+	From string
+	To   []string
+	Body []byte
 }
